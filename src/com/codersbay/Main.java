@@ -21,56 +21,74 @@ public class Main {
         StringBuilder output = new StringBuilder();
 
         for (int i = 0; i < input.length(); i++){
-            String character = input.substring(i,i+1);
+            char character = input.charAt(i);
 
-            switch(character) {
-                case "A":
-                case "a":
-                    output.append("@"); break;
+            // ! ! ! ! !
+            // ! m p 0 r 7 @ n 7
+            // char = ' '
+            // String = " "
+            // ! ! ! ! !
 
-                case "B":
-                case "b":
-                    output.append("8"); break;
+            switch (character) {
+                case 'A':
+                case 'a':
+                    output.append("@");
+                    break;
 
-                case "C":
-                case "c":
-                    output.append("("); break;
+                case 'B':
+                case 'b':
+                    output.append("8");
+                    break;
 
-                case "E":
-                case "e":
-                    output.append("3"); break;
-                // also, I just learned that
-                case "G":
-                case "g":
-                    output.append("6"); break;
+                case 'C':
+                case 'c':
+                    output.append("(");
+                    break;
 
-                case "H":
-                case "h":
-                    output.append("#"); break;
+                case 'E':
+                case 'e':
+                    output.append("3");
+                    break;
+                // also, I just learned that... pretty neat
+                case 'G':
+                case 'g':
+                    output.append("6");
+                    break;
 
-                case "I":
-                case "i":
-                    output.append("!"); break;
+                case 'H':
+                case 'h':
+                    output.append("#");
+                    break;
 
-                case "L":
-                case "l":
-                    output.append("1"); break;
+                case 'I':
+                case 'i':
+                    output.append("!");
+                    break;
 
-                case "O":
-                case "o":
-                    output.append("0"); break;
+                case 'L':
+                case 'l':
+                    output.append("1");
+                    break;
 
-                case "S":
-                case "s":
-                    output.append("$"); break;
+                case 'O':
+                case 'o':
+                    output.append("0");
+                    break;
 
-                case "T":
-                case "t":
-                    output.append("7"); break;
+                case 'S':
+                case 's':
+                    output.append("$");
+                    break;
 
-                case "Z":
-                case "z":
-                    output.append("2"); break;
+                case 'T':
+                case 't':
+                    output.append("7");
+                    break;
+
+                case 'Z':
+                case 'z':
+                    output.append("2");
+                    break;
 
                 default:
                     output.append(character);
